@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="shoppers.css"> <!-- Include your CSS file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>/* Reset some default styles for consistency */
+        body, h1, p, button {
+            margin: 0;
+            padding: 0;
+        }
+        .container-fluid{
+            display: flex;
+        }
+        
+        /* Style the product description container */
+        .product-description {
+            max-width: 400px;
+            margin-left:10px ;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        /* Style the product title */
+        .product-description h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        /* Style the product price */
+        .product-description .price {
+            font-size: 18px;
+            color: #ff5733; /* Change to your desired color */
+        }
+        
+        /* Style the product description text */
+        .product-description .description {
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+        
+        
+        </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div style="background-color: #0077b6;" class="container-fluid">
+            <a style="color: whitesmoke;" class="navbar-brand" href="product.html">View Products</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:3500/wishlist">View Shopping Cart details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Add Bootstrap JS scripts at the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+
+    <div class="container-fluid">
+    <div class="product-description">
+        <h1>Tshirt</h1>
+        <img src="best-shirts-men.webp" class="card-img-top" alt="Product 1">
+        <p class="price">$99.99</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula eget lacus sit amet ullamcorper. In hac habitasse platea dictumst. Sed congue urna at purus malesuada tristique.</p>
+    </div>
+    <div class="product-description">
+        <h1>Shirt</h1>
+        <img src="actor-adult-blue-businessman.jpg" style="height: 40%;" class="card-img-top" alt="Product 1">
+        <p class="price">$99.99</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula eget lacus sit amet ullamcorper. In hac habitasse platea dictumst. Sed congue urna at purus malesuada tristique.</p>
+    </div>
+    <div class="product-description">
+        <h1>Pants</h1>
+        <img src="park_avenue_formal_pants_for_men_1663148910989_1663148924095_1663148924095.webp"  class="card-img-top" alt="Product 1">
+        <p class="price">$99.99</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula eget lacus sit amet ullamcorper. In hac habitasse platea dictumst. Sed congue urna at purus malesuada tristique.</p>
+    </div>
+    <div class="product-description">
+        <h1>Lower</h1>
+        <img src="download (1).jpg" class="card-img-top" alt="Product 1">
+        <p class="price">$99.99</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula eget lacus sit amet ullamcorper. In hac habitasse platea dictumst. Sed congue urna at purus malesuada tristique.</p>
+    </div>
+    </div>
+            <form id="product-form" action="http://localhost:3500/cart" method="post" class="your-form-class">
+                <label for="user">User ID (Reference to User Model):</label>
+                <input type="text" id="user" name="user" required>
+        
+                <label for="product">Select Product:</label>
+                <select id="product" name="product" required>
+                    <option value="Tshirt">Tshirt</option>
+                    <option value="Shirt">Shirt</option>
+                    <option value="Pants">Pants</option>
+                    <option value="Lower">Lower</option>
+                    <!-- Add more options as needed -->
+                </select>
+        
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+        
+                <button type="submit">add to cart</button>
+            </form>
+        </div></section>
+            
+
+
+    <!-- Include related products, reviews, or other sections -->
+
+    <script src="script.js"></script> <!-- Include your JavaScript file -->
+</body>
+
+</html>
